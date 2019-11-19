@@ -175,6 +175,10 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+.container1300 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .container-nav-bar {
   position: sticky;
   top: 0;
