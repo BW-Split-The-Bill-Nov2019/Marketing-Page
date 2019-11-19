@@ -4,12 +4,23 @@
     display: flex;
     height: 70vh;
     background: linear-gradient(90deg, @offwhite 50%, @lightgreen 50%);
-    @media @phone {
+    @media @tablet {
       background: none;
       height: 50vh;
     }
     h2 {
-      margin-left: 10%;
+      font-size: 7.2rem;
+      //padding: 0 0 0 10%;
+      color: @darkgreen;
+      padding-left: 10%;
+      @media @tablet {
+      padding-left: 0;
+      font-size: 4.9rem;
+      text-align: left;
+      }
+      @media @phone {
+        font-size: 3.9rem;
+      }
     }
  
 
@@ -28,14 +39,14 @@
     justify-content: center;
     align-items: center;
     //margin: 0 auto;
-    @media @phone {
+    @media @tablet {
       display: none;
       //width: 0%;
     }
     img {
-      width: 500px;
+      width: 800px;
       //height: 400px;
-      @media @phone {
+      @media @tablet {
         display: none;
         //width: 0;
       }
@@ -52,9 +63,10 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    @media @phone {
+    //margin: 0 auto;
+    @media @tablet {
       width: 100%;
-      text-align: center;
+      //text-align: center;
     }
 
   }
@@ -62,6 +74,12 @@
 
 .width-95 {
   width: 98%;
+  @media @tablet { 
+    width: 70%;
+    margin: 0 auto;
+    
+  }
+
   @media @phone { 
     width: 80%;
     margin: 0 auto;
@@ -69,19 +87,10 @@
   }
 }
 
-h2 {
-  font-size: 7.2rem;
-  //padding: 0 0 0 10%;
-  color: @darkgreen;
-  @media @phone { 
-    font-size: 4rem;
-    
-  }
-}
 
 .sign-up {
   margin-top: 10%;
-  width: 466px;
+  width: 70%;
   height: 102px;
   border-radius: 70px;
   border: none;
@@ -102,6 +111,9 @@ h2 {
   font-size: 8rem;
   color: @darkgrey;
   padding-top: 5%;
+  @media @tablet {
+    font-size: 7rem;
+    }
   @media @phone {
   font-size: 4rem;
   }
@@ -123,7 +135,7 @@ h2 {
   padding: 10% 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; 
   @media @phone {
     //display: block;
@@ -146,8 +158,16 @@ h2 {
       font-size: 4.8rem;
       width: 95%;
       line-height: 5.6rem;
-      text-align: justify;
-      
+      text-align: left;
+      @media @tablet {
+        font-size: 2.8rem;
+      }
+      @media @phone {
+        font-size: 2.4rem;
+        line-height: 30px;
+        margin: 0 auto;
+        
+      }
     }
     @media @phone {
       width: 99%;

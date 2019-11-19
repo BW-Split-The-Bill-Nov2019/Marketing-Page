@@ -12,7 +12,13 @@
   position: sticky;
   top: 0;
   background-color: @mediumgreen;
-  color: @dirtywhite
+  h1 {
+    color: @dirtywhite;
+    font-weight: bold;
+  }
+  @media @tablet{ 
+  position: static;
+  }
 }
 
 
@@ -23,12 +29,13 @@
   justify-content: space-between; 
   align-items: center;
   padding: 3rem 0rem;
-  width: 85%;
+  width: 95%;
+  color: @dirtywhite;
  
   margin: 0 auto;
 
  
-  @media @phone{
+  @media @tablet{
     
     text-align: center;
     //border: 1px red solid;
@@ -44,8 +51,8 @@ nav {
   display: flex;
   //border: 1px red solid;
   justify-content: space-around;
-  font-size: 1.8rem;
-  @media @phone {
+  font-size: 2rem;
+  @media @tablet {
     width: 100%;
     padding-top: 2rem;
     font-size: 1.6rem;
