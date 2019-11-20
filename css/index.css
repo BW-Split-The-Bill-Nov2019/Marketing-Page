@@ -527,3 +527,55 @@ header h2 {
 .allButFooter {
   min-height: calc(100vh - 88px);
 }
+.about-title {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 4rem;
+  color: #6C7A89;
+}
+.container-about-top {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+.acolor {
+  color: black;
+  font-size: 2rem;
+}
+.content4 {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content4 h3 {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.content4 p {
+  text-align: justify;
+  width: 75%;
+}
+.img-circle {
+  border-radius: 190px;
+  width: 70%;
+}
+.content3 {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content3 h3 {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.content3 p {
+  text-align: justify;
+  width: 75%;
+}
+.fa-github {
+  font-size: 3rem;
+}
