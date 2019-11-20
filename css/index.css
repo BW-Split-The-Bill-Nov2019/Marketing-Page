@@ -224,6 +224,7 @@ nav {
 }
 .footer {
   width: 100%;
+  box-sizing: border-box;
   background: #DADADA;
 }
 .footer p {
@@ -426,4 +427,103 @@ header h2 {
 .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+.containerx {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .containerx {
+    max-width: 380px;
+  }
+}
+.contact {
+  background: #F5F5F5;
+  padding: 25px;
+  margin: 150px 0 0 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 40px;
+}
+@media (max-width: 800px) {
+  .contact {
+    margin: 150px 0;
+  }
+}
+@media (max-width: 500px) {
+  .contact {
+    margin: 40px 0;
+  }
+}
+.contact h3 {
+  display: block;
+  font-size: 42px;
+  color: #6C7A89;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.inputs {
+  margin-bottom: 20px;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  border: 1px solid #BDC3C7;
+  background: #FDFDFD;
+  margin: 0 0 30px;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 18px;
+}
+@media (max-width: 800px) {
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+.contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+  border-radius: 30px;
+  font-family: roboto;
+}
+.contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #177C84;
+  color: #FDFDFD;
+  margin: 0 0 5px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+@media (max-width: 800px) {
+  .contact button[type="submit"] {
+    padding: 10px;
+    border-radius: 30px;
+  }
+}
+.contact button[type="submit"]:hover {
+  background: #7EB2B7;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.copyright {
+  text-align: center;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+.allButFooter {
+  min-height: calc(100vh - 88px);
 }
