@@ -529,9 +529,20 @@ header h2 {
 }
 .about-title {
   text-align: center;
-  padding: 4rem 0;
-  font-size: 4rem;
+  padding: 6rem 0;
+  font-size: 6rem;
   color: #6C7A89;
+}
+@media (max-width: 800px) {
+  .about-title {
+    padding: 3rem 0;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-title {
+    padding-bottom: 0.5rem;
+  }
 }
 .container-about-top {
   width: 80%;
@@ -539,6 +550,12 @@ header h2 {
   margin: 0 auto;
   justify-content: space-around;
   padding: 3rem 0;
+}
+@media (max-width: 500px) {
+  .container-about-top {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .acolor {
   color: black;
@@ -549,10 +566,51 @@ header h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .content4 {
+    width: 80%;
+    padding-bottom: 1.8rem;
+  }
+}
+.content4 .h2about {
+  font-size: 4rem;
+}
+@media (max-width: 800px) {
+  .content4 .h2about {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .content4 .h2about {
+    padding: 0.5rem 0;
+  }
+}
+.content4 h2 {
+  padding-top: 1rem;
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  .content4 h2 {
+    padding: 0.5rem 0;
+  }
 }
 .content4 h3 {
   font-size: 2.5rem;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
+}
+@media (max-width: 800px) {
+  .content4 h3 {
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .content4 h3 {
+    padding: 0.2rem 0;
+  }
 }
 .content4 p {
   text-align: justify;
@@ -561,20 +619,6 @@ header h2 {
 .img-circle {
   border-radius: 190px;
   width: 70%;
-}
-.content3 {
-  width: 24%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.content3 h3 {
-  font-size: 2.5rem;
-  padding: 0.5rem 0;
-}
-.content3 p {
-  text-align: justify;
-  width: 75%;
 }
 .fa-github {
   font-size: 3rem;
