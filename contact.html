@@ -4,34 +4,61 @@
 <head>
     <title>Split The Bill</title>
 
-    <link href="/Users/admin/Desktop/User-Interface/index.css" rel="stylesheet" type="text/css"> npm
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>Leave Us A Message:</p>
-    </div>
 
-    <div class="column">
-        <img src="jason-leung-mZNRsYE9Qi4-unsplash (1).jpg" alt="neon light signage">
-    </div>
+    <section>
+        <div class="container-nav-bar">
+            <div class="nav-bar container">
+                <h1>Split-the-Bill</h1>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="#featureclick">Features</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="">Meet the Team</a>
+                    <a href="">Log In</a>
+                </nav>
+            </div>
+    </section>
 
-    <div clas="column">
-        <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+    <section>
+        <div class="container-contact">
+            <div style="text-align: center">
+                <h1>Contact Us</h1>
+                <p>Leave Us A Message:</p>
+            </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <img src="https://images.unsplash.com/photo-1530811761207-8d9d22f0a141?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jason-leung-mZNRsYE9Qi4-unsplash.jpg" style="width: 50%" alt="neon light signage">
 
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write Something..."></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+
+            <div class="columnTwo">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write Something..."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
 
 </body>
+
+<footer class="footer">
+    <p>Copyright Split-the-Bill 2019</p>
+</footer>
+
 
 </html>
