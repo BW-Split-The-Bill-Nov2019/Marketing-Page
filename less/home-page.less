@@ -97,12 +97,19 @@
   background: @darkgreen;
   font-size: 4.8rem;
   color: @offwhite;
+  &:hover {
+    background: @mediumgreen;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
   @media @phone {
     width: 26rem;
     height: 65px;
     font-size: 2.2rem;
   }
 }
+
 
 // *****************  content section 
 

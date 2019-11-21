@@ -325,6 +325,12 @@ header h2 {
   font-size: 4.8rem;
   color: #F5F5F5;
 }
+.sign-up:hover {
+  background: #7EB2B7;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
 @media (max-width: 500px) {
   .sign-up {
     width: 26rem;
